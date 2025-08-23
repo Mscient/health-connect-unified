@@ -8,35 +8,68 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Healthcare color palette - Professional medical blues with trust-building colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Medical blue - trustworthy and professional */
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 100% 95%;
+    --primary-dark: 210 100% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Clean medical gray */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted: Soft backgrounds */
+    --muted: 210 20% 98%;
+    --muted-foreground: 210 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Healthcare teal */
+    --accent: 180 60% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 180 60% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Success: Medical green */
+    --success: 145 80% 45%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 145 80% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warning: Medical amber */
+    --warning: 45 100% 55%;
+    --warning-foreground: 210 15% 15%;
+    --warning-light: 45 100% 95%;
 
-    --radius: 0.5rem;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 90%;
+    --input: 210 30% 95%;
+    --ring: 210 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Healthcare gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(210 100% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 50%), hsl(180 60% 50%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    --gradient-accent: linear-gradient(135deg, hsl(180 60% 50%), hsl(145 80% 45%));
+
+    /* Healthcare shadows */
+    --shadow-card: 0 4px 20px -4px hsl(210 100% 50% / 0.1);
+    --shadow-hero: 0 20px 60px -20px hsl(210 100% 50% / 0.3);
+    --shadow-feature: 0 8px 30px -8px hsl(210 15% 15% / 0.1);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +89,56 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode healthcare theme */
+    --background: 210 25% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 25% 10%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 25% 10%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 210 100% 60%;
+    --primary-foreground: 210 25% 8%;
+    --primary-light: 210 100% 15%;
+    --primary-dark: 210 100% 50%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 25% 15%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 25% 12%;
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 180 60% 55%;
+    --accent-foreground: 210 25% 8%;
+    --accent-light: 180 60% 15%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --success: 145 80% 50%;
+    --success-foreground: 210 25% 8%;
+    --success-light: 145 80% 15%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --warning: 45 100% 60%;
+    --warning-foreground: 210 25% 8%;
+    --warning-light: 45 100% 15%;
+
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 210 25% 8%;
+
+    --border: 210 25% 18%;
+    --input: 210 25% 15%;
+    --ring: 210 100% 60%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 60%), hsl(210 100% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 60%), hsl(180 60% 55%));
+    --gradient-card: linear-gradient(145deg, hsl(210 25% 10%), hsl(210 25% 12%));
+    --gradient-accent: linear-gradient(135deg, hsl(180 60% 55%), hsl(145 80% 50%));
+
+    /* Dark mode shadows */
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-hero: 0 20px 60px -20px hsl(210 100% 60% / 0.2);
+    --shadow-feature: 0 8px 30px -8px hsl(0 0% 0% / 0.2);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +156,81 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Healthcare-specific utility classes */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-hero {
+    box-shadow: var(--shadow-hero);
+  }
+
+  .shadow-feature {
+    box-shadow: var(--shadow-feature);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  /* Healthcare animations */
+  .pulse-gentle {
+    animation: pulse-gentle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-gentle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus styles for accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
   }
 }
