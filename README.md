@@ -207,7 +207,7 @@ For support, please:
 - [ ] Mobile application (Android/iOS)
 - [ ] Real-time notifications and alerts[6]
 - [ ] Enhanced FHIR resource support
-- [ ] Multi-language support
+- [ ] Multi-language support.
 
 ***
 
